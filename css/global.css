@@ -49,9 +49,11 @@ a:visited {
   white-space: nowrap;
 }
 
-.btn {
-  color: var(--white);
+a.btn {
   border: none;
+  padding: 0.8rem 2.2rem;
+  color: var(--main-neutral);
+  border-radius: 15px;
 }
 
 /* Navbar */
