@@ -56,7 +56,6 @@ a:visited {
 
 /* Navbar */
 .nav-bar {
-  /* border: 5px solid green; */
   padding-inline: 1rem;
   position: fixed;
   display: flex;
@@ -65,16 +64,33 @@ a:visited {
   left: 0;
   right: 0;
   background-color: var(--main-neutral);
+  padding-top: 0.5rem;
 }
 
 .nav-bar__container {
-  /* border: 2px solid red; */
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: min(1280px, 90vw);
-  /* width: 1200px; */
   justify-content: space-between;
+  height: 3rem;
+}
 
+.nav-link__wrapper {
+  position: relative;
+}
+
+.nav-link__underline {
+  display: none;
+  width: 120%;
+  height: 4px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -0.5rem;
+  left: -10%;
+}
+
+.nav-link__underline.active {
+  display: block;
 }
 
 .nav-bar__text-logo {
@@ -168,7 +184,8 @@ footer {
 .opening-hours__columns-container {
   border: 2px dashed #000;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  /* min-width: 100%; */
   /* gap: 1rem; */
 }
 
