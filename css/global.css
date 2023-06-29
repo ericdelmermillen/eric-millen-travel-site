@@ -163,3 +163,24 @@ a:visited {
   border: 2px dashed red;
   width: 33.33%;
 }
+
+/* Breakpoints / Media Queries */
+@media (max-width: 480px) {
+  /* Styles for screens up to 480 pixels */
+}
+
+@media (max-width: 767px) {
+  /* Styles for screens between 481 and 767 pixels */
+}
+
+@media (max-width: 1023px) {
+  /* Styles for screens between 768 and 1023 pixels */
+}
+
+@media (max-width: 1279px) {
+  /* Styles for screens between 1024 and 1279 pixels */
+}
+
+@media (min-width: 1280px) {
+  /* Styles for screens of 1280 pixels and beyond */
+}
