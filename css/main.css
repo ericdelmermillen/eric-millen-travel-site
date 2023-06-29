@@ -67,10 +67,11 @@
 .recommendations__card--container {
   display: flex;
   align-items: flex-end;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   flex-wrap: wrap;
   border: 2px dotted #000;
-  gap: 1rem
+  width: 100%;
+  /* gap: 10%; */
 }
 
 .recommendations__card--container .card {
