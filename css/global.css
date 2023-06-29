@@ -1,0 +1,165 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Variables */
+
+:root { 
+  /* Colors */
+  --main-neutral: #fff;
+  --text-main: #335576;
+  --accent: #DB7A4E;
+  --secondary-neutral: #FEFAF5;
+
+  /* Fonts */
+  --base-font: Verdana, sans-serif, arial;
+
+  /* Font Weights */
+  /* font-family: "Verdana"; */
+
+}
+
+html {
+  font-family: var(--base-font);
+  color: var(--text-main)
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit
+}
+
+.accent-bg {
+  background: var(--accent);
+}
+
+.accent-text {
+  color: var(--accent);
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.btn {
+  color: var(--white);
+  border: none;
+}
+
+/* Navbar */
+.nav-bar {
+  border: 5px solid green;
+  padding-inline: 1rem;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--main-neutral);
+}
+
+.nav-bar__container {
+  border: 2px solid red;
+  display: flex;
+  align-items: flex-end;
+  width: min(1280px, 90vw);
+  /* width: 1200px; */
+  justify-content: space-between;
+
+}
+
+.nav-bar__text-logo {
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-bar ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Recommendations Section*/
+.recommendations {
+  border: 5px solid green;
+}
+
+.recommendation__card--container {
+  border: 2px dotted #000;
+  text-align: center;
+}
+
+/* Cards */
+
+.card {
+  border: 5px solid blue;
+  height: 300px;
+  width: 220px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* Footer */
+
+.footer {
+  border: 5px solid blue;
+  background: var(--secondary-neutral);
+  display: flex;
+  justify-content: center;
+}
+
+.footer__flex-container {
+  width: 80vw;
+  border: 2px dotted #000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer__contact--container {
+  border: 2px solid red;
+  /* width: 30vw; */
+}
+
+.footer__hours--container {
+  /* width: 30vw; */
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__socials--container {
+  /* width: 30vw; */
+  border: 2px solid green;
+}
+
+.socials__icons {
+  border: 2px dotted #000;
+  width: 50px;
+  height: 50px;
+}
+
+.hours__columns--container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.sub {
+  border: 2px dashed red;
+  width: 33.33%;
+}
