@@ -56,7 +56,7 @@ a:visited {
 
 /* Navbar */
 .nav-bar {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   padding-inline: 1rem;
   position: fixed;
   display: flex;
@@ -68,7 +68,7 @@ a:visited {
 }
 
 .nav-bar__container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   align-items: flex-end;
   width: min(1280px, 90vw);
@@ -94,18 +94,18 @@ a:visited {
 
 /* Recommendations Section*/
 .recommendations {
-  border: 5px solid green;
+  /* border: 5px solid green; */
 }
 
 .recommendation__card--container {
-  border: 2px dotted #000;
+  /* border: 2px dotted #000; */
   text-align: center;
 }
 
 /* Cards */
 
 .card {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   height: 300px;
   width: 220px;
   display: inline-block;
@@ -113,14 +113,6 @@ a:visited {
 }
 
 /* Footer */
-
-.footer {
-  border: 5px solid blue;
-  background: var(--secondary-neutral);
-  display: flex;
-  justify-content: center;
-}
-
 .footer__flex-container {
   width: 80vw;
   border: 2px dotted #000;
@@ -183,4 +175,36 @@ a:visited {
 
 @media (min-width: 1280px) {
   /* Styles for screens of 1280 pixels and beyond */
+}
+
+
+/* New Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  border: 2px solid red;
+  background: var(--secondary-neutral);
+}
+
+.container {
+  display: flex;
+  max-width: min(90vw, 1280px);
+  width: 100%;
+  border: 2px dashed #000;
+}
+
+.footer__column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid green;
+}
+
+.footer__column small {
+  color: var(--accent);
+}
+
+.footer__column.wide {
+  flex: 2;
+  border: 2px solid blue;
 }
