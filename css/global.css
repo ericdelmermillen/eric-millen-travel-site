@@ -112,20 +112,16 @@ a.btn {
 
 /* Recommendations Section*/
 .recommendations {
-  /* border: 5px solid green; */
+  border: 5px solid green;
 }
 
-.recommendation__card--container {
-  /* border: 2px dotted #000; */
-  text-align: center;
-}
 
 /* Cards */
 
 .card {
   /* border: 5px solid blue; */
-  height: 300px;
-  width: 220px;
+  height: 26rem;
+  width: 18rem;
   display: inline-block;
   border-radius: 10px;
 }
