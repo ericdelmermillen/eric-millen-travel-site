@@ -22,6 +22,7 @@
 html {
   color: var(--text-main);
   font-family: var(--base-font);
+  font-size: 100%;
 }
 
 a {
@@ -222,6 +223,9 @@ footer {
     text-align: center;
     font-size: 2rem;
     margin-inline: 0
+  }
+  .footer__column:first-of-type {
+    padding-inline: 0rem;
   }
   .footer__column:last-of-type {
     display: flex;
