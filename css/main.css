@@ -6,7 +6,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   background: var(--secondary-neutral);
-  height: calc(100vh);
+  height: 100vh;
 }
 
 .hero-section__column-container {
@@ -26,6 +26,16 @@
   align-items: flex-start;
 }
 
+.header__left--cta  h1 {
+  line-height: 1.5;
+  padding: 2rem 0;
+}
+
+.header__left--cta  p {
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
 .header__right--image-container {
   display: flex;
   justify-content: flex-end;
@@ -33,6 +43,7 @@
   /* border: 2px dotted gray; */
   width: 45vw;
   min-width: 300px;
+  padding: 2rem 0;
 }
 
 .header__right--image-container img {
@@ -70,8 +81,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   border: 2px dotted #000;
+  gap: 2rem;
   width: 100%;
-  /* gap: 10%; */
 }
 
 .recommendations__card--container .card {
@@ -86,6 +97,7 @@
   margin-bottom: 1rem;
 }
 
+
 .recommendations__card--container .card:nth-of-type(1) {
   background: url("../assets/Images/hawaii.jpg") center center / cover;
 }
@@ -96,4 +108,77 @@
 
 .recommendations__card--container .card:nth-of-type(3) {
   background: url("../assets/Images/greece.jpg") center center / cover;
+}
+
+.background-image__description {
+  display: none;
+}
+
+/* Breakpoints / Media Queries */
+@media (max-width: 480px) {
+  /* Styles for screens up to 480 pixels */
+}
+
+@media (max-width: 800px) {
+  /* Styles for screens between 481 and 767 pixels */
+.hero-section__column-container {
+  width: min(1280px, 90vw);
+  border: 2px dotted #000;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.header__left--cta {
+  /* border: 2px dotted #000; */
+  width: 45vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section {
+  border: 5px solid red;
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: var(--secondary-neutral);
+  max-height: 100vh;
+}
+.header__right--image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px dotted gray; */
+  width: 45vw;
+  min-width: 300px;
+}
+
+
+}
+
+@media (max-width: 1050px) {
+  /* Styles for screens between 768 and 1023 pixels */
+  .recommendations__card--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .recommendations__content--container > h3 {
+    align-self: center;
+    /* font-size: 2.5rem; */
+    font-size: min(2.5rem 90%);
+  }
+}
+
+@media (max-width: 1279px) {
+  /* Styles for screens between 1024 and 1279 pixels */
 }

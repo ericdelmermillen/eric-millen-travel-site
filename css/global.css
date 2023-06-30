@@ -1,4 +1,4 @@
-/* CSS Reset */
+CSS Reset
 *,
 *::before,
 *::after {
@@ -54,6 +54,7 @@ a.btn {
   padding: 0.8rem 2.2rem;
   color: var(--main-neutral);
   border-radius: 15px;
+  margin: 2rem 0;
 }
 
 /* Navbar */
@@ -77,38 +78,38 @@ a.btn {
   height: 3rem;
 }
 
-.nav-link__wrapper {
-  position: relative;
-}
-
-.nav-link__underline {
-  display: none;
-  width: 120%;
-  height: 4px;
-  background: var(--accent);
-  position: absolute;
-  bottom: -0.5rem;
-  left: -10%;
-}
-
-.nav-link__underline.active {
-  display: block;
-}
-
-.nav-bar__text-logo {
-}
-
-.nav-bar ul {
-  display: flex;
+.nav-links {
   list-style: none;
+  display: flex;
   gap: 1rem;
 }
 
-.nav-bar ul a {
+.nav-links li a {
   text-decoration: none;
   color: inherit;
 }
 
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent); /* Set your desired underline color */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link.active::after {
+  opacity: 1;
+}
+
+/*  */
 
 /* Recommendations Section*/
 .recommendations {
@@ -126,29 +127,7 @@ a.btn {
   border-radius: 10px;
 }
 
-/* Breakpoints / Media Queries */
-@media (max-width: 480px) {
-  /* Styles for screens up to 480 pixels */
-}
-
-@media (max-width: 767px) {
-  /* Styles for screens between 481 and 767 pixels */
-}
-
-@media (max-width: 1023px) {
-  /* Styles for screens between 768 and 1023 pixels */
-}
-
-@media (max-width: 1279px) {
-  /* Styles for screens between 1024 and 1279 pixels */
-}
-
-@media (min-width: 1280px) {
-  /* Styles for screens of 1280 pixels and beyond */
-}
-
-
-/* New Footer */
+/* New Section */
 footer {
   display: flex;
   justify-content: center;
@@ -156,7 +135,7 @@ footer {
   background: var(--secondary-neutral);
 }
 
-.container {
+.footer__container {
   display: flex;
   max-width: min(90vw, 1280px);
   width: 100%;
@@ -191,9 +170,78 @@ footer {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
+  width: 8rem;
   border: 2px solid orange;
 }
 
+.social--icon {
+  height: 25px;
+}
+
+.footer__column:first-of-type {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  border: 2px solid red;
+}
+
 .footer__column:last-of-type {
-  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 2rem;
+  border: 2px solid red;
+}
+
+.footer__column:last-of-type h4 {
+  align-self: flex-start;
+  border: 2px solid red;
+}
+
+.social__content--container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Breakpoints / Media Queries */
+@media (max-width: 480px) {
+  /* Styles for screens up to 480 pixels */
+}
+
+@media (max-width: 767px) {
+  /* Styles for screens between 481 and 767 pixels */
+}
+
+@media (max-width: 1000px) {
+  /* Styles for screens between 768 and 1023 pixels */
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__column {
+    border: 2px solid red;
+    text-align: center;
+  }
+  .footer__column h4{
+    border: 2px solid red;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer__column:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0rem;
+    border: 2px solid red;
+}
+
+
+.opening-hours__columns-container {
+  flex-direction: column;
+}
+  
+}
+@media (max-width: 1279px) {
+  /* Styles for screens between 1024 and 1279 pixels */
 }
