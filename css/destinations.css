@@ -1,0 +1,6 @@
+
+.hero-section--hawaii {
+  background: url("../assets/Images/hawaii.jpg") center center / cover;
+  border: 5px solid red;
+  height: 100vh;
+}
