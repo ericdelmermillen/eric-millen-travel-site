@@ -1,4 +1,4 @@
-CSS Reset
+/*  */
 *,
 *::before,
 *::after {
@@ -8,7 +8,6 @@ CSS Reset
 }
 
 /* Custom Variables */
-
 :root { 
   /* Colors */
   --main-neutral: #fff;
@@ -18,15 +17,11 @@ CSS Reset
 
   /* Fonts */
   --base-font: Verdana, sans-serif, arial;
-
-  /* Font Weights */
-  /* font-family: "Verdana"; */
-
 }
 
 html {
+  color: var(--text-main);
   font-family: var(--base-font);
-  color: var(--text-main)
 }
 
 a {
@@ -37,56 +32,48 @@ a:visited {
   color: inherit
 }
 
-.accent-bg {
-  background: var(--accent);
-}
-
-.accent-text {
-  color: var(--accent);
-}
-
 .no-wrap {
   white-space: nowrap;
 }
 
 a.btn {
+  background: var(--accent);
   border: none;
-  padding: 0.8rem 2.2rem;
-  color: var(--main-neutral);
   border-radius: 15px;
+  color: var(--main-neutral);
   margin: 2rem 0;
+  padding: 0.8rem 2.2rem;
 }
 
 /* Navbar */
 .nav-bar {
-  padding-inline: 1rem;
-  position: fixed;
+  background-color: var(--main-neutral);
   display: flex;
   justify-content: center;
-  top: 0;
   left: 0;
+  padding-top: 0.5rem 1rem 0 1rem;
+  position: fixed;
   right: 0;
-  background-color: var(--main-neutral);
-  padding-top: 0.5rem;
+  top: 0;
 }
 
 .nav-bar__container {
-  display: flex;
   align-items: center;
-  width: min(1280px, 90vw);
-  justify-content: space-between;
+  display: flex;
   height: 3rem;
+  justify-content: space-between;
+  width: min(1280px, 90vw);
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 1rem;
+  list-style: none;
 }
 
 .nav-links li a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -94,52 +81,49 @@ a.btn {
 }
 
 .nav-link::after {
-  content: "";
-  position: absolute;
+  background-color: var(--accent); 
   bottom: -5px;
-  left: 0;
-  width: 100%;
+  content: "";
   height: 2px;
-  background-color: var(--accent); /* Set your desired underline color */
+  left: 0;
   opacity: 0;
+  position: absolute;
   transition: opacity 0.3s ease;
+  width: 100%;
 }
 
 .nav-link.active::after {
   opacity: 1;
 }
 
-/*  */
-
 /* Recommendations Section*/
 .recommendations {
   border: 5px solid green;
 }
 
-
 /* Cards */
 
 .card {
   /* border: 5px solid blue; */
+  border-radius: 10px;
+  display: inline-block;
   height: 26rem;
   width: 18rem;
-  display: inline-block;
-  border-radius: 10px;
 }
 
 /* New Section */
 footer {
+  border: 2px solid red;
   display: flex;
   justify-content: center;
-  border: 2px solid red;
   background: var(--secondary-neutral);
 }
 
 .footer__container {
+  border: 2px dashed #000;
   display: flex;
   max-width: min(90vw, 1280px);
   width: 100%;
-  border: 2px dashed #000;
 }
 
 .footer__column {
@@ -174,9 +158,16 @@ footer {
   border: 2px solid orange;
 }
 
+.social-icon__wrapper{
+  height: 25px;
+  margin-top: 0.6rem;
+}
+
 .social--icon {
   height: 25px;
 }
+
+
 
 .footer__column:first-of-type {
   display: flex;
@@ -222,11 +213,14 @@ footer {
   .footer__column {
     border: 2px solid red;
     text-align: center;
+    padding: 0;
+    margin-inline: 0;
   }
   .footer__column h4{
     border: 2px solid red;
     text-align: center;
     font-size: 2rem;
+    margin-inline: 0
   }
   .footer__column:last-of-type {
     display: flex;
@@ -234,14 +228,34 @@ footer {
     align-items: center;
     padding-right: 0rem;
     border: 2px solid red;
+  }
+
+  .footer__column p {
+    padding: 1rem 0;
+  }
+  .footer__column h4 {
+    margin: 1rem 0;
+  }
+
+  .opening-hours__columns-container {
+    flex-direction: column;
+  }  
+
+  .social-icons__container {
+    display: flex;
+  }
+  .social__content--container {
+    border: 2px solid blue;
+    width: 100%;
+    align-items: center;
+  }
+  .footer__column:last-of-type h4 {
+    align-self: center;
+    width: 100%;
+    border: 2px solid red;
+  }
 }
 
-
-.opening-hours__columns-container {
-  flex-direction: column;
-}
-  
-}
 @media (max-width: 1279px) {
   /* Styles for screens between 1024 and 1279 pixels */
 }
