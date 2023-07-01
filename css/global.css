@@ -80,24 +80,20 @@ a.btn {
   text-decoration: none;
 }
 
-.nav-bar__menu-item {
+.nav-bar__menu-item--active {
   position: relative;
 }
 
-.nav-bar__menu-item::after {
+.nav-bar__menu-item--active::after {
   background-color: var(--accent); 
   bottom: -5px;
   content: "";
   height: 3px;
   left: 0;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   transition: opacity 0.3s ease;
   width: 100%;
-}
-
-.nav-bar__menu-item.active::after {
-  opacity: 1;
 }
 
 /* Recommendations Section*/
