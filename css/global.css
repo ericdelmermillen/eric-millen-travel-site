@@ -110,10 +110,10 @@ a.btn {
   width: 18rem;
 }
 
-/* New Section */
+/* New Footer Section */
 .footer {
   /* border: 2px solid red; */
-  padding: 2rem 0;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   background: var(--secondary-neutral);
@@ -128,7 +128,6 @@ a.btn {
 
 .footer__column {
   flex: 1;
-  /* border: 2px solid green; */
 }
 
 .footer__column,
@@ -141,7 +140,8 @@ a.btn {
   /* border: 2px solid blue; */
 }
 
-.footer__heading {
+.footer__heading--contact,
+.footer__heading--hours {
   padding-bottom: 1rem;
 }
 
@@ -149,7 +149,7 @@ a.btn {
   padding-bottom: 1.25rem;
 }
 
-.foooter__column--sub-heading {
+.footer__column--sub-heading {
   color: var(--accent);
   font-size: 0.75rem;
   padding-bottom: 0.5rem;
@@ -218,6 +218,10 @@ a.btn {
 
 @media (max-width: 1000px) {
   /* Styles for screens between 768 and 1023 pixels */
+  .footer {
+    text-align: center;
+  }
+  
   .footer__container {
     display: flex;
     flex-direction: column;
@@ -227,6 +231,10 @@ a.btn {
     text-align: center;
     padding: 0;
     margin-inline: 0;
+  }
+
+  .footer__column--wide {
+    margin: 2rem 0;
   }
   .footer__column h4,
   .footer__column--wide h4 {
@@ -246,6 +254,10 @@ a.btn {
     /* border: 2px solid red; */
   }
 
+  .footer__heading--hours {
+    margin: 1rem 0;
+  }
+
   .footer__column p {
     padding: 1rem 0;
   }
@@ -256,6 +268,10 @@ a.btn {
   .footer__column--hours-container {
     align-items: center;
     flex-direction: column;
+  }
+  .footer__column--sub-heading {
+    /* border: 2px solid red; */
+    margin: 2rem 0 1rem;
   }
   
 
