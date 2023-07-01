@@ -14,6 +14,7 @@
   --text-main: #335576;
   --accent: #DB7A4E;
   --secondary-neutral: #FEFAF5;
+  --flat-black: #333;
 
   /* Fonts */
   --base-font: Verdana, sans-serif, arial;
@@ -55,10 +56,11 @@ a.btn {
   height: 4rem;
   justify-content: center;
   left: 0;
-  padding-top: 0.5rem 1rem 0 1rem;
-  position: fixed;
+  padding: 0.5rem 1rem 0 1rem;
+  position: sticky;
   right: 0;
   top: 0;
+  z-index: 10;
 }
 
 .nav-bar__container {
@@ -108,6 +110,8 @@ a.btn {
   display: inline-block;
   height: 26rem;
   width: 18rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
 }
 
 /* New Footer Section */
