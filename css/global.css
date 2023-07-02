@@ -94,7 +94,6 @@ a.btn {
   left: 0;
   opacity: 1;
   position: absolute;
-  transition: opacity 0.3s ease;
   width: 100%;
 }
 
@@ -106,17 +105,17 @@ a.btn {
 /* Cards */
 .card {
   /* border: 5px solid blue; */
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0 0 0 0.2);
   display: inline-block;
   height: 26rem;
   width: 18rem;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 
 }
 
 /* New Footer Section */
 .footer {
-  /* border: 2px solid red; */
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -189,7 +188,6 @@ a.btn {
   flex-direction: column;
   display: flex;
   padding-left: 2rem;
-  /* border: 2px solid red; */
 }
 
 .footer__column:last-of-type {
@@ -197,12 +195,10 @@ a.btn {
   flex-direction: column;
   align-items: flex-end;
   padding-right: 2rem;
-  /* border: 2px solid red; */
 }
 
 .footer__column:last-of-type h4 {
   align-self: flex-start;
-  /* border: 2px solid red; */
 }
 
 .footer__column__social-container {
@@ -231,7 +227,6 @@ a.btn {
     flex-direction: column;
   }
   .footer__column {
-    /* border: 2px solid red; */
     text-align: center;
     padding: 0;
     margin-inline: 0;
@@ -242,7 +237,6 @@ a.btn {
   }
   .footer__column h4,
   .footer__column--wide h4 {
-    /* border: 2px solid red; */
     text-align: center;
     font-size: 2rem;
     margin-inline: 0
@@ -255,7 +249,6 @@ a.btn {
     flex-direction: column;
     align-items: center;
     padding-right: 0rem;
-    /* border: 2px solid red; */
   }
 
   .footer__heading--hours {
@@ -274,7 +267,6 @@ a.btn {
     flex-direction: column;
   }
   .footer__column--sub-heading {
-    /* border: 2px solid red; */
     margin: 2rem 0 1rem;
   }
   
@@ -291,22 +283,9 @@ a.btn {
   .footer__column:last-of-type h4 {
     align-self: center;
     width: 100%;
-    /* border: 2px solid red; */
   }
 }
 
 @media (max-width: 1279px) {
   /* Styles for screens between 1024 and 1279 pixels */
 }
-
-/*
-.nav{
-
-  &__bar{
-    &--active{
-      @includes .active
-    }
-  }
-}
-
-*/

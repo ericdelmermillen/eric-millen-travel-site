@@ -1,6 +1,5 @@
 /* Hero Section */
 .hero-section {
-  /* border: 5px solid red; */
   padding-top: 4rem;
   display: flex;
   justify-content: space-around;
@@ -61,7 +60,6 @@
 }
 
 .recommendations__content--container {
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,13 +67,11 @@
 }
 
 .recommendations__content--container > h3 {
-  /* border: 2px solid red; */
   align-self: flex-start;
   margin-bottom: 2rem;
 }
 
 .recommendations__card--container {
-  border: 2px dotted #000;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
@@ -97,16 +93,21 @@
 }
 
 
-.recommendations__card--container .card:nth-of-type(1) {
+#hawaii-card.card {
   background: url("../assets/Images/hawaii.jpg") center center / cover;
 }
 
-.recommendations__card--container .card:nth-of-type(2) {
+#iceland-card.card {
   background: url("../assets/Images/iceland.jpg") center center / cover;
 }
 
-.recommendations__card--container .card:nth-of-type(3) {
+#greece-card.card {
   background: url("../assets/Images/greece.jpg") center center / cover;
+}
+
+.card:hover {
+  scale: 1.05;
+  transition: all 0.25s ease-in-out;
 }
 
 .background-image__description {
@@ -144,7 +145,6 @@
   }
 
   .hero-section {
-    /* border: 5px solid red; */
     padding-top: 4rem;
     display: flex;
     justify-content: space-around;
