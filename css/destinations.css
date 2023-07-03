@@ -1,40 +1,39 @@
 /* Hero Section */
 .hero-section__background-image--hawaii {
+  align-items: center;
+  background: url("../assets/Images/hawaii.jpg") center center / cover;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 2rem 0;  
   height: calc(100vh - 4rem);
+  padding: 2rem 0;  
   width: 100%;
-  background: url("../assets/Images/hawaii.jpg") center center / cover;
 }
 
 .hero-section__background-image--iceland {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 2rem 0;  
-  height: calc(100vh - 4rem);
-  width: 100%;
   background: url("../assets/Images/iceland.jpg") center center / cover;
+  display: flex;
+  height: calc(100vh - 4rem);
+  justify-content: center;
+  padding: 2rem 0;  
+  width: 100%;
 }
 
 .hero-section__background-image--greece {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 2rem 0;  
-  height: calc(100vh - 4rem);
-  width: 100%;
   background: url("../assets/Images/greece.jpg") center center / cover;
+  display: flex;
+  height: calc(100vh - 4rem);
+  justify-content: center;
+  padding: 2rem 0;  
+  width: 100%;
 }
 
 .hero__content--container {
   display: flex;
-  /* min-height: calc(100vh - 4rem); */
-  width: min(1280px, 90vw);
   flex-direction: column;
   justify-content: center;
+  width: min(1280px, 90vw);
 }
 
 .hero-section__card--container {
@@ -52,14 +51,14 @@
 }
 
 .card {
+  align-items: center;
   background: var(--main-neutral);
   color: var(--flat-black);
-  text-align: center;
-  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 2rem 0;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .card__itinerary {
@@ -77,44 +76,33 @@
 }
 
 .card__heading--underline {
-  width: 80%;
-  height: 3px; 
   background: #333;;
+  height: 3px; 
   margin: 0.2rem 0 1rem;
+  width: 80%;
 }
 
 /* Breakpoints / Media Queries */
-@media (max-width: 480px) {
-  /* Styles for screens up to 480 pixels */
-}
-
-@media (max-width: 800px) {
-
-}
-
 @media (max-width: 1050px) {
   .hero-section__background-image--hawaii,
   .hero-section__background-image--greece, 
   .hero-section__background-image--iceland {
     height: 100%;
   }
+
   .hero-section__card--container {
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 2rem;
+    justify-content: center;
   }
-.hero-section__heading {
-  text-align: center;
-}
+
+  .hero-section__heading {
+    text-align: center;
+  }
 
   .recommendations__content--container > h3 {
     align-self: center;
-    /* font-size: 2.5rem; */
     font-size: min(2.5rem 90%);
   }
-}
-
-@media (max-width: 1279px) {
-  /* Styles for screens between 1024 and 1279 pixels */
 }
